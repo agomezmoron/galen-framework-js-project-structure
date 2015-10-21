@@ -1,0 +1,21 @@
+# @summary     Galen Framework Project example gspec
+# @description Example gspec file.
+# @version     0.1
+# @file        run.sh
+# @author      Alejandro Gómez <agommor@gmail.com>
+# @contact     @agomezmoron
+# @copyright   Copyright 2015
+
+@objects
+  main-box   css .page-content
+
+= Main box =
+    @on mobile
+        main-box:
+            absent
+    @on tablet
+        main-box:
+            visible
+    @on desktop
+        main-box:
+            visible
