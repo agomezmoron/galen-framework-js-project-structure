@@ -67,6 +67,16 @@ var devices = {
         size: "384x640",
         tags: [deviceTypes.mobile]
 	},
+	LGNexus5:{
+		deviceName: "LG Nexus 5",
+        size: "360x640",
+        tags: [deviceTypes.mobile]
+	},
+	LGNexus4:{
+		deviceName: "LG Nexus 4",
+        size: "384x640",
+        tags: [deviceTypes.mobile]
+	},
 	SamsungGalaxyNote:{
 		deviceName: "Samsung Galaxy Note",
         size: "400x640",
@@ -110,6 +120,11 @@ var devices = {
 	SamsungGalaxyS:{
 		deviceName: "Samsung Galaxy S",
         size: "320x533",
+        tags: [deviceTypes.mobile]
+	},
+    SamsungGalaxyNexus:{
+		deviceName: "Samsung Galaxy Nexus",
+        size: "360x600",
         tags: [deviceTypes.mobile]
 	},
 	// tables
