@@ -31,7 +31,7 @@ var deviceTypes = {
  * All possible devices.
  */
 var devices = {
-	// mobiles
+    // mobiles
     iphone4: {
         deviceName: "iPhone4",
         size: "480x320",
@@ -52,88 +52,88 @@ var devices = {
         size: "736x414",
         tags: [deviceTypes.mobile]
     },
-	LGG4:{
-		deviceName: "LG G4",
+    LGG4:{
+        deviceName: "LG G4",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	LGG3:{
-		deviceName: "LG G3",
+    },
+    LGG3:{
+        deviceName: "LG G3",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	LGOptimusG:{
-		deviceName: "LG Optimus G",
+    },
+    LGOptimusG:{
+        deviceName: "LG Optimus G",
         size: "384x640",
         tags: [deviceTypes.mobile]
-	},
-	LGNexus5:{
-		deviceName: "LG Nexus 5",
+    },
+    LGNexus5:{
+        deviceName: "LG Nexus 5",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	LGNexus4:{
-		deviceName: "LG Nexus 4",
+    },
+    LGNexus4:{
+        deviceName: "LG Nexus 4",
         size: "384x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyNote:{
-		deviceName: "Samsung Galaxy Note",
+    },
+    SamsungGalaxyNote:{
+        deviceName: "Samsung Galaxy Note",
         size: "400x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyNote2:{
-		deviceName: "Samsung Galaxy Note 2",
+    },
+    SamsungGalaxyNote2:{
+        deviceName: "Samsung Galaxy Note 2",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS5:{
-		deviceName: "Samsung Galaxy S5",
+    },
+    SamsungGalaxyS5:{
+        deviceName: "Samsung Galaxy S5",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS4:{
-		deviceName: "Samsung Galaxy S4",
+    },
+    SamsungGalaxyS4:{
+        deviceName: "Samsung Galaxy S4",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS4Mini:{
-		deviceName: "Samsung Galaxy S4 mini",
+    },
+    SamsungGalaxyS4Mini:{
+        deviceName: "Samsung Galaxy S4 mini",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS3:{
-		deviceName: "Samsung Galaxy S3",
+    },
+    SamsungGalaxyS3:{
+        deviceName: "Samsung Galaxy S3",
         size: "360x640",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS3Mini:{
-		deviceName: "Samsung Galaxy S3 mini",
+    },
+    SamsungGalaxyS3Mini:{
+        deviceName: "Samsung Galaxy S3 mini",
         size: "320x533",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS2:{
-		deviceName: "Samsung Galaxy S2",
+    },
+    SamsungGalaxyS2:{
+        deviceName: "Samsung Galaxy S2",
         size: "320x533",
         tags: [deviceTypes.mobile]
-	},
-	SamsungGalaxyS:{
-		deviceName: "Samsung Galaxy S",
+    },
+    SamsungGalaxyS:{
+        deviceName: "Samsung Galaxy S",
         size: "320x533",
         tags: [deviceTypes.mobile]
-	},
+    },
     SamsungGalaxyNexus:{
-		deviceName: "Samsung Galaxy Nexus",
+        deviceName: "Samsung Galaxy Nexus",
         size: "360x600",
         tags: [deviceTypes.mobile]
-	},
-	// tables
+    },
+    // tables
     ipadAir: {
         deviceName: "ipadAir",
         size: "768x1024",
         tags: [deviceTypes.tablet]
     },
-	// desktops
+    // desktops
     desktop1024: {
         deviceName: "desktop1024",
         size: "1024x768",
