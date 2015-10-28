@@ -44,7 +44,7 @@ function getDevicePossibilities(device) {
     if (!isNull(device) && !isNull(device.tags)) {
         var clonedDevice = JSON.clone(device);
         // if it's a mobile or a tablet, we must add both options
-        if (clonedDevice.tags.contains(deviceTypes.mobile) || clonedDevice.tags.contains(deviceTypes.tablet)) {
+        if (clonedDevice.tags.contains(deviceTypes.mobile) || clonedDevice.tags.contains(deviceTypes.tablet) || clonedDevice.tags.contains(deviceTypes.phablet)) {
             // creating landscape and portrait
             var currentSize = clonedDevice.size;
             var sizes = currentSize.split('x');
