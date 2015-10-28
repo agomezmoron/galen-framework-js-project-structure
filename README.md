@@ -17,7 +17,7 @@ Once you have [Galen Framework](http://galenframework.com) installed you have to
 Secondly, you will find a configuration file located in [tests/config/config.js](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/tests/config/config.js) where you will find:
 
 * **config** (JSON object): Here you will be able to define some basic config parameters (baseURL, etc).
-* **devicesToTest **(JSON object): Here you will have to define all the devices you want to test. In the existent [browsers.js](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/utils/browsers.js) file you have some defined devices. If you miss someone else, it's strongly recommend to add there before using it.
+* **devicesToTest** (JSON object): Here you will have to define all the devices you want to test. In the existent [browsers.js](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/utils/browsers.js) file you have some defined devices. If you miss someone else, it's strongly recommend to add there before using it.
 
 Once having configuring the project and defined the first test like in the [provided example](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/tests/suites/demo.test.js) you will have to create the *key* of the responsive testing: the .gspec files. Those files are written following the [Galen spec language](http://galenframework.com/docs/reference-galen-spec-language-guide/) and you can find a simple example in [specs/demo.gspec](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/specs/demo.gspec).
 
