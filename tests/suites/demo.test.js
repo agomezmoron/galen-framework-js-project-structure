@@ -3,7 +3,7 @@
  * @summary     Galen Framework Project Tool
  * @description Demo test
  * @version     0.1
- * @file        commons.js
+ * @file        demo.test.js
  * @author      Alejandro Gómez <agommor@gmail.com>
  * @contact     @agomezmoron
  * @copyright   Copyright 2015
@@ -26,6 +26,7 @@ forAll(devicesToTest, function (device) {
         // here goes a test code
         var driver = createDriver(config.baseURL,
             device.size);
+        // here is the "key" of the galen-framework testing
         checkLayout(driver, "specs/demo.gspec", device.tags);
         driver.close();
     });
