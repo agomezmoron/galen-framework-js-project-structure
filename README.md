@@ -21,7 +21,7 @@ Secondly, you will find a configuration file located in [tests/config/config.js]
 
 Once having configuring the project and defined the first test like in the [provided example](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/tests/suites/demo.test.js) you will have to create the *key* of the responsive testing: the .gspec files. Those files are written following the [Galen spec language](http://galenframework.com/docs/reference-galen-spec-language-guide/) and you can find a simple example in [specs/demo.gspec](https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/specs/demo.gspec).
 
-[Galen Framework](http://galenframework.com) uses for the **checkLayout** test method a provided 
+[Galen Framework](http://galenframework.com) uses for the *checkLayout* test method a provided 
 (https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/specs/demo.gspec)
 
 ##Contributing
