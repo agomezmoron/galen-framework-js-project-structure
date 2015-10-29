@@ -23,6 +23,7 @@
  */
 var deviceTypes = {
     mobile: 'mobile',
+    phablet: 'phablet',
     tablet: 'tablet',
     desktop: 'desktop'
 };
