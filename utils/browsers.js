@@ -199,7 +199,7 @@ var devices = {
         size: "360x640",
         tags: [deviceTypes.mobile]
     },
-    Lenovo K900:{
+    LenovoK900:{
         deviceName: "Lenovo K900",
         size: "360x640",
         tags: [deviceTypes.mobile]
