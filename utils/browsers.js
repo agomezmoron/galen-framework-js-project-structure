@@ -23,8 +23,14 @@
  */
 var deviceTypes = {
     mobile: 'mobile',
+    mobile_portait: 'mobile-portait',
+    mobile_landscape: 'mobile-landscape',
     phablet: 'phablet',
+    phablet_portait: 'phablet-portait',
+    phablet_landscape: 'phablet-landscape',
     tablet: 'tablet',
+    tablet_portait: 'tablet-portait',
+    tablet_landscape: 'tablet-landscape',
     desktop: 'desktop'
 };
 

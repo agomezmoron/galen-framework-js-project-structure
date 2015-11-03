@@ -55,9 +55,13 @@ function getDevicePossibilities(device) {
             if (sizes[0] > sizes [1]) {
                 clonedDevice.deviceName += '-landscape';
                 newDevice.deviceName += '-portrait';
+                clonedDevice.tags.push(clonedDevice.tags[0] + '-landscape');
+                newDevice.tags.push(newDevice.tags[0] + '-portrait');
             } else {
                 clonedDevice.deviceName += '-portrait';
                 newDevice.deviceName += '-landscape';
+                clonedDevice.tags.push(clonedDevice.tags[0] + '-portrait');
+                newDevice.tags.push(newDevice.tags[0] + '-landscape');
             }
             possibleDevices[clonedDevice.deviceName] = clonedDevice;;
             possibleDevices[newDevice.deviceName] = newDevice;
