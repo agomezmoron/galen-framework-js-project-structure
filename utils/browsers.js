@@ -19,6 +19,16 @@
  */
 
 /**
+ * Bootstrap device width classifications.
+ */
+var deviceMaxWidths = {
+    mobile: 768,
+    phablet: 992,
+    tablet: 992,
+    desktop: 1200
+};
+
+/**
  * Device types.
  */
 var deviceTypes = {

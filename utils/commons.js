@@ -57,13 +57,13 @@ function getDevicePossibilities(device) {
             if (sizes[0] > sizes [1]) {
                 clonedDevice.deviceName += ' - landscape';
                 newDevice.deviceName += ' - portrait';
-                clonedDevice.tags.push(clonedDevice.tags[0] + '-landscape');
-                newDevice.tags.push(newDevice.tags[0] + '-portrait');
+                clonedDevice.tags = getTags(clonedDevice);
+                newDevice.tags = getTags(newDevice);
             } else {
                 clonedDevice.deviceName += ' - portrait';
                 newDevice.deviceName += ' - landscape';
-                clonedDevice.tags.push(clonedDevice.tags[0] + '-portrait');
-                newDevice.tags.push(newDevice.tags[0] + '-landscape');
+                clonedDevice.tags = getTags(clonedDevice);
+                newDevice.tags = getTags(newDevice);
             }
             possibleDevices[clonedDevice.deviceName] = clonedDevice;;
             possibleDevices[newDevice.deviceName] = newDevice;
@@ -106,4 +106,36 @@ if (typeof JSON.clone !== "function") {
     JSON.clone = function(obj) {
         return JSON.parse(JSON.stringify(obj));
     };
+}
+
+/**
+ * It returns the correct tags for a given device depending on its size.
+ */
+function getTags(device) {
+    var tags = device.tags;
+    var currentSize = device.size;
+    var sizes = currentSize.split('x');
+    sizes[0] = parseInt(sizes[0]);
+    sizes[1] = parseInt(sizes[1]);
+    var width = sizes[0];
+    // correcting the tag depending on the width
+    if (width <= deviceMaxWidths.mobile) {
+        tags.push(deviceTypes.mobile);
+    } else if (width <= deviceMaxWidths.phablet && device.tags.contains(deviceTypes.phablet)) {
+        tags.push(deviceTypes.phablet);
+    } else if (width <= deviceMaxWidths.tablet && device.tags.contains(deviceTypes.tablet)) {
+        tags.push(deviceTypes.tablet);
+    } else {
+        tags.push(deviceTypes.desktop);
+    }
+    
+    // adding portrait/landscape if needed
+    if (tags.contains(deviceTypes.mobile) || tags.contains(deviceTypes.tablet) || tags.contains(deviceTypes.phablet)) {
+        if (sizes[0] < sizes[1]) {
+            tags.push(tags[0] + '-portrait');
+        } else {
+            tags.push(tags[0] + '-landscape');
+        }
+    }
+    return tags;
 }
