@@ -119,12 +119,30 @@ function getTags(device) {
     sizes[1] = parseInt(sizes[1]);
     var width = sizes[0];
     // correcting the tag depending on the width
-    if (width <= deviceMaxWidths.mobile) {
-        tags.push(deviceTypes.mobile);
-    } else if (width <= deviceMaxWidths.phablet && device.tags.contains(deviceTypes.phablet)) {
-        tags.push(deviceTypes.phablet);
-    } else if (width <= deviceMaxWidths.tablet && device.tags.contains(deviceTypes.tablet)) {
-        tags.push(deviceTypes.tablet);
+    if (device.tags.contains(deviceTypes.mobile)) {
+        if (width <= deviceMaxWidths.mobile) {
+            tags.push(deviceTypes.mobile);
+        } else if (width <= deviceMaxWidths.phablet) {
+            tags.push(deviceTypes.phablet);
+        } else if (width <= deviceMaxWidths.tablet) {
+            tags.push(deviceTypes.tablet);
+        } else {
+            tags.push(deviceTypes.desktop);
+        }
+    } else if (deviceMaxWidths.phablet) {
+        if (width <= deviceMaxWidths.phablet) {
+            tags.push(deviceTypes.phablet);
+        } else if (width <= deviceMaxWidths.tablet) {
+            tags.push(deviceTypes.tablet);
+        } else {
+            tags.push(deviceTypes.desktop);
+        }
+    } else if (deviceMaxWidths.tablet) {
+       if (width <= deviceMaxWidths.tablet) {
+            tags.push(deviceTypes.tablet);
+        } else {
+            tags.push(deviceTypes.desktop);
+        }
     } else {
         tags.push(deviceTypes.desktop);
     }
