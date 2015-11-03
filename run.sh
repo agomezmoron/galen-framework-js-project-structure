@@ -17,5 +17,5 @@
 #
 # For details please refer to: https://github.com/agomezmoron/galen-framework-js-project-structure
 #
-NOW=$(date +"%Y-%m-%d_%H_%M_%S")
+NOW=$(date +"%Y-%m-%d/%H_%M_%S")
 galen test tests/suites/ --htmlreport reports/$NOW
