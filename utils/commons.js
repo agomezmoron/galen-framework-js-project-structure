@@ -112,7 +112,7 @@ if (typeof JSON.clone !== "function") {
  * It returns the correct tags for a given device depending on its size.
  */
 function getTags(device) {
-    var tags = device.tags;
+    var tags = new Array();
     var currentSize = device.size;
     var sizes = currentSize.split('x');
     sizes[0] = parseInt(sizes[0]);
