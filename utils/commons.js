@@ -48,6 +48,8 @@ function getDevicePossibilities(device) {
             // creating landscape and portrait
             var currentSize = clonedDevice.size;
             var sizes = currentSize.split('x');
+            sizes[0] = parseInt(sizes[0]);
+            sizes[1] = parseInt(sizes[1]);
             var newDevice = JSON.clone(device);
             // swapping the sizes
             newDevice.size = sizes[1] + 'x' + sizes[0];
