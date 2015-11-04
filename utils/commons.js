@@ -129,7 +129,7 @@ function getTags(device) {
         } else {
             tags.push(deviceTypes.desktop);
         }
-    } else if (ddevice.tags.contains(deviceTypes.phablet)) {
+    } else if (device.tags.contains(deviceTypes.phablet)) {
         if (width <= deviceMaxWidths.phablet) {
             tags.push(deviceTypes.phablet);
         } else if (width <= deviceMaxWidths.tablet) {
