@@ -362,6 +362,61 @@ var devices = {
         size: "800x1280",
         tags: [deviceTypes.tablet]
     },
+    HPSlate6VoiceTab: {
+        deviceName: "HP Slate 6 VoiceTab",
+        size: "720x1280",
+        tags: [deviceTypes.tablet]
+    },
+    HPSlate6VoiceTabII: {
+        deviceName: "HP Slate 6 VoiceTab II",
+        size: "720x1280",
+        tags: [deviceTypes.tablet]
+    },
+    HP7G2: {
+        deviceName: "HP 7 G2",
+        size: "720x1280",
+        tags: [deviceTypes.tablet]
+    },
+    HP7Plus: {
+        deviceName: "HP 7 Plus",
+        size: "600x1024",
+        tags: [deviceTypes.tablet]
+    },
+    HP7VoiceTab: {
+        deviceName: "HP 7 Voice Tab",
+        size: "600x1024",
+        tags: [deviceTypes.tablet]
+    },
+    HPSlate7: {
+        deviceName: "HP Slate 7",
+        size: "1024x600",
+        tags: [deviceTypes.tablet]
+    },
+    HPSlate7Plus: {
+        deviceName: "HP Slate 7 Plus",
+        size: "1280x800",
+        tags: [deviceTypes.tablet]
+    },
+    HPProSlate8: {
+        deviceName: "HP Pro Slate 8",
+        size: "2048x1536",
+        tags: [deviceTypes.tablet]
+    },
+    HPSlate8Pro: {
+        deviceName: "HP Slate 8 Pro",
+        size: "1600x1200",
+        tags: [deviceTypes.tablet]
+    },
+    HPSlate10HD: {
+        deviceName: "HP Slate 10 HD",
+        size: "1280x800",
+        tags: [deviceTypes.tablet]
+    },
+    HPProSlate12: {
+        deviceName: "HP Pro Slate 12",
+        size: "1600x1200",
+        tags: [deviceTypes.tablet]
+    },
     HTCNexus9: {
         deviceName: "HTC Nexus 9",
         size: "768x1024",
