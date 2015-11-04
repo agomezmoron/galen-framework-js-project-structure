@@ -129,7 +129,7 @@ function getTags(device) {
         } else {
             tags.push(deviceTypes.desktop);
         }
-    } else if (deviceMaxWidths.phablet) {
+    } else if (ddevice.tags.contains(deviceTypes.phablet)) {
         if (width <= deviceMaxWidths.phablet) {
             tags.push(deviceTypes.phablet);
         } else if (width <= deviceMaxWidths.tablet) {
@@ -137,7 +137,7 @@ function getTags(device) {
         } else {
             tags.push(deviceTypes.desktop);
         }
-    } else if (deviceMaxWidths.tablet) {
+    } else if (device.tags.contains(deviceTypes.tablet)) {
        if (width <= deviceMaxWidths.tablet) {
             tags.push(deviceTypes.tablet);
         } else {
