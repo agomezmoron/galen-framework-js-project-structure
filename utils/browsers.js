@@ -23,8 +23,8 @@
  */
 var deviceMaxWidths = {
     mobile: 768,
-    phablet: 992,
-    tablet: 992,
+    phablet: 959,
+    tablet: 959,
     desktop: 1200
 };
 
@@ -430,16 +430,6 @@ var devices = {
     AsusNexus7V2: {
         deviceName: "Asus Nexus 7 (v2)",
         size: "604x966",
-        tags: [deviceTypes.tablet]
-    },
-    AmazonKindleFireHD8_9: {
-        deviceName: "Amazon Kindle Fire HD 8.9",
-        size: "600x960",
-        tags: [deviceTypes.tablet]
-    },
-    AmazonKindleFireHD7: {
-        deviceName: "Amazon Kindle Fire HD 7",
-        size: "480x800",
         tags: [deviceTypes.tablet]
     },
     MicrosoftSurface: {
