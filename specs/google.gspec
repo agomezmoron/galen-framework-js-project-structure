@@ -1,0 +1,32 @@
+# @summary     Galen Framework Project example gspec
+# @description Example gspec file.
+# @version     0.1
+# @file        google.gspec
+# @author      Alejandro Gómez <agommor@gmail.com>
+# @contact     @agomezmoron
+# @copyright   Copyright 2015
+
+@objects
+  google-logo   css #hplogo
+  input-search-big  xpath //input[@name='btnK']
+
+= Main box =
+    @on mobile
+      google-logo:
+        visible
+    @on tablet
+      google-logo:
+        visible
+    @on desktop
+      google-logo:
+        visible
+
+= Search section =
+    # set the big search input button always as visible
+    @on *
+      input-search-big:
+        visile;
+    # overriding only for mobile resolutions as absent
+    @on mobile
+      input-search-big:
+        absent;

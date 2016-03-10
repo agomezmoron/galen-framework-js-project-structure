@@ -18,13 +18,11 @@
  * For details please refer to: https://github.com/agomezmoron/galen-framework-js-project-structure
  */
 
-var config  = {
-    baseURL: "http://localhost:8080/"
+var config = {
+  baseURL: "https://www.google.es/"
 };
 
 /**
  * Devices to test. Use the defined browsers defined in utils/browsers.js
  */
-var devicesToTest = {
-    iphone4: devices.iphone4
-};
+var devicesToTest = devices; // here we define to test in all the defined devices
