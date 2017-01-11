@@ -26,6 +26,8 @@ Once having configuring the project and defined the first test like in the [prov
 [Galen Framework](http://galenframework.com) uses for the *checkLayout* test method a provided 
 (https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/specs/google.gspec)
 
+After all is set, type ./run.sh in the terminal and the test will start.
+
 ##Contributing
 
 This project is under the MIT License. So you can request to be a contributor if you think you can provide more extra functionalities just contact to the owner to start working with him.
