@@ -25,8 +25,8 @@
     # set the big search input button always as visible
     @on *
       input-search-big:
-        visile;
+        visible
     # overriding only for mobile resolutions as absent
     @on mobile
       input-search-big:
-        absent;
+        absent
