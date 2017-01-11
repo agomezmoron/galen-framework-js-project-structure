@@ -30,5 +30,6 @@ forAll(devicesToTest, function (device) {
     // here is the "key" of the galen-framework testing
     checkLayout(driver, "specs/google.gspec", device.tags);
     driver.close();
+    driver.quit();
   });
 });
