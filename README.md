@@ -10,6 +10,8 @@ The project also includes a catalog with some commons devices (iPad, iPhones, et
 
 Before using this project structure you must have installed [Galen Framework](http://galenframework.com). You can follow the provided steps in http://galenframework.com/docs/getting-started-install-galen/
 
+You will also need the GeckoDriver binary added to the system's path. Download the latest version from here: https://github.com/mozilla/geckodriver/releases
+
 ##How to use it
 
 Once you have [Galen Framework](http://galenframework.com) installed you have to provide execution permissions for the run.sh file. That file will perform all the existent tests in the tests/suites folder. According to the [Galen Framework JS API test guide](http://galenframework.com/docs/reference-javascript-tests-guide/), each test should be located in tests/suites/xxxx.test.js
@@ -23,6 +25,8 @@ Once having configuring the project and defined the first test like in the [prov
 
 [Galen Framework](http://galenframework.com) uses for the *checkLayout* test method a provided 
 (https://github.com/agomezmoron/galen-framework-js-project-structure/blob/master/specs/google.gspec)
+
+After all is set, type ./run.sh in the terminal and the test will start.
 
 ##Contributing
 
