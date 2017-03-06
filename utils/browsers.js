@@ -65,6 +65,11 @@ var devices = {
         size: "667x375",
         tags: [deviceTypes.mobile]
     },
+    iPhone7: {
+        deviceName: "iphone7",
+        size: "667x375",
+        tags: [deviceTypes.mobile]
+    },
     LGG4:{
         deviceName: "LG G4",
         size: "360x640",
