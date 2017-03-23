@@ -1,5 +1,10 @@
 Galen Framework JS API Project Structure
 ==============
+
+**IMPORTANT!**: This project is old, I strongly recommend using the npm handler: https://github.com/agomezmoron/galen-framework-handler. There are [some examples done in the Drupal Developer Days 2017](https://github.com/agomezmoron/DrupalDevDays-Responsive-Testing-Workshop).
+
+
+
 [Galen Framework](http://galenframework.com) is an open-source tool for testing layout and responsive design of web applications. It is also a powerfull functional testing framework. For more information visit http://galenframework.com
 
 In this project you will find a structure with some additional functionalities in order to work with Galen Framework through the JS API and also *overriding* some functionalities (like generating for each given divice to test, all the possible possibilities (portrait and landscape) for *tablet* or *mobile* devices.
